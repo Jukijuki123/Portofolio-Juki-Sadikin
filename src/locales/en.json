@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Juki Sadikin",
+    "role": "Frontend Developer",
+    "description": "Passionate Web Developer specializing in React.JS and Laravel, dedicated to crafting innovative, high-performance Software that deliver seamless user experiences. Committed to blending creativity with technical excellence to develop intuitive, efficient, and impactful software solutions.",
+    "ctaProject": "View Projects",
+    "ctaContact": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a developer focused on building modern web applications with strong performance and clean user experience.",
+    "educationTitle": "Education",
+    "skillsTitle": "Skills",
+    "education": [
+      {
+        "school": "Example University",
+        "major": "Informatics Engineering",
+        "year": "2020 - 2024"
+      },
+      {
+        "school": "Example Vocational School",
+        "major": "Software Engineering",
+        "year": "2017 - 2020"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",   
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "achievement": {
+    "title": "Achievements & Certificates"
+  }
+}

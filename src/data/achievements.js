@@ -1,8 +1,8 @@
-import cert1 from "../assets/images/BDPJS2026.png";
-import cert2 from "../assets/images/BDGC2026.png";
-import cert3 from "../assets/images/AIIC2025.png";
-import cert4 from "../assets/images/Technoversary2025.png";
-import cert5 from "../assets/images/INVOFEST2025.png";
+import cert1 from "../assets/images/certificate/BDPJS2026.png";
+import cert2 from "../assets/images/certificate/BDGC2026.png";
+import cert3 from "../assets/images/certificate/AIIC2025.png";
+import cert4 from "../assets/images/certificate/Technoversary2025.png";
+import cert5 from "../assets/images/certificate/INVOFEST2025.png";
 
 export const achievements = [
     {

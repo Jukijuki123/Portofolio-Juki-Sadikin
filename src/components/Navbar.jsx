@@ -22,21 +22,21 @@ export default function Navbar() {
   };
 
   const navItem =
-    "text-base font-medium text-gray-700 hover:text-black transition";
+    "text-base font-medium text-gray-600 hover:text-primary transition";
 
   return (
     <nav
       className="
       fixed w-full z-50
       backdrop-blur-md
-      bg-white/70
+      bg-white/60
       border-b border-gray-200
     "
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* LOGO */}
-        <h1 className="font-bold text-xl tracking-tight">
+        <h1 className="font-bold text-2xl text-primary tracking-tight">
           JS
         </h1>
 

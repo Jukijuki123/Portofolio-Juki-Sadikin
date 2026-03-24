@@ -18,7 +18,7 @@ export default function LanguageSwitcher() {
       <motion.div
         layout
         transition={{ type: "spring", stiffness: 400, damping: 30 }}
-        className="absolute top-1 bottom-1 w-1/2 bg-black rounded-full"
+        className="absolute top-1 bottom-1 w-1/2 bg-primary rounded-full"
         style={{
           left: currentLang === "id" ? "4px" : "50%",
         }}

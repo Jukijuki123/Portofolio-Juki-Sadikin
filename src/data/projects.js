@@ -151,7 +151,7 @@ export const projects = [
     id: 10,
     name: {
       id: "Game IPAS Kelas 3",
-      en: "Science Game Grade 3",
+      en: " Science Game Grade 3",
     },
     description: {
       id: "Game Edukasi Interaktif IPAS Kelas 3 Bab 4",

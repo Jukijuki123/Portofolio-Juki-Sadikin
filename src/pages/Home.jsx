@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import profile from "../assets/images/profil.jpeg";
+import profile1 from "../assets/images/1.svg";
+import profile2 from "../assets/images/2.svg";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
             {t("hero.name")}
           </h1>
 
@@ -39,14 +40,14 @@ export default function Hero() {
           <div className="flex gap-4 mt-8">
             <button
               onClick={() => scrollTo("projects")}
-              className="px-6 py-3 bg-black text-white rounded-xl shadow-soft hover:scale-105 transition"
+              className="px-6 py-3 bg-primary text-white rounded-xl shadow-soft hover:scale-105 transition"
             >
               {t("hero.ctaProject")}
             </button>
 
             <button
               onClick={() => scrollTo("contact")}
-              className="px-6 py-3 border rounded-xl hover:bg-gray-100 transition"
+              className="px-6 py-3 border border-primary rounded-xl hover:bg-teal-50 text-primary transition"
             >
               {t("hero.ctaContact")}
             </button>
@@ -60,15 +61,36 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="flex justify-center"
         >
-          <div className="relative">
+          <div className="relative group">
+
+            {/* IMAGE 1 (DEFAULT) */}
             <img
-              src={profile}
+              src={profile1}
               alt="profile"
-              className="w-72 md:w-96 rounded-3xl shadow-soft object-cover"
+              className="
+                w-72 md:w-96 rounded-3xl object-cover
+                group-hover:scale-105 transition duration-500
+                group-hover:opacity-0
+              "
             />
 
-            {/* subtle background effect */}
+            {/* IMAGE 2 (HOVER) */}
+            <img
+              src={profile2}
+              alt="profile hover"
+              className="
+                w-72 md:w-96 rounded-3xl object-cover
+                absolute top-0 left-0
+                opacity-0
+                transition duration-500
+                group-hover:scale-105
+                group-hover:opacity-100
+              "
+            />
+
+            {/* BACKGROUND */}
             <div className="absolute -z-10 w-full h-full bg-soft rounded-3xl top-6 left-6"></div>
+
           </div>
         </motion.div>
 

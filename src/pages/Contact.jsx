@@ -13,6 +13,7 @@ export default function Contact() {
   });
 
   const phoneNumber = "6285707393495"; 
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -20,136 +21,96 @@ export default function Contact() {
     });
   };
 
-  const sendWhatsApp = () => {
-    if (!form.name || !form.message) {
-      alert("Harap isi nama dan pesan.");
-      return;
-    }
+  const sendWhatsApp = (e) => {
+    e.preventDefault();
 
-    const text = `
-Halo, saya ${form.name}
-
-Email: ${form.email}
-
-Pesan:
-${form.message}
-`;
-
-    const url =
-      `https://wa.me/${phoneNumber}?text=` +
-      encodeURIComponent(text);
+    const text = `Halo, saya ${form.name}\n\nEmail: ${form.email}\n\nPesan:\n${form.message}`;
+    const url = `https://wa.me/${phoneNumber}?text=` + encodeURIComponent(text);
 
     window.open(url, "_blank");
+    
+    setForm({ name: "", email: "", message: "" });
   };
 
   return (
-    <section
-      id="contact"
-      className="py-28 bg-soft"
-    >
+    <section id="contact" className="py-28 bg-soft">
       <div className="max-w-xl mx-auto px-6">
 
-        {/* TITLE */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-4xl font-semibold mb-10 text-center"
+          className="text-4xl font-semibold mb-10 text-primary text-center"
         >
           {t("contact.title")}
         </motion.h2>
 
-        {/* FORM CARD */}
-        <motion.div
+        <motion.form
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="
-            bg-white
-            shadow-soft
-            rounded-3xl
-            p-8
-            space-y-4
-          "
+          onSubmit={sendWhatsApp}
+          className="bg-white shadow-soft rounded-3xl p-8 space-y-4"
         >
           <input
+            type="text"
             name="name"
+            value={form.name}
+            required
             placeholder={t("contact.name")}
             onChange={handleChange}
-            className="
-              w-full
-              border
-              rounded-xl
-              p-3
-              focus:outline-none
-              focus:ring-2
-              focus:ring-black/20
-            "
+            aria-label="Nama Lengkap"
+            className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
           />
 
           <input
+            type="email"
             name="email"
+            value={form.email}
+            required
             placeholder={t("contact.email")}
             onChange={handleChange}
-            className="
-              w-full
-              border
-              rounded-xl
-              p-3
-              focus:outline-none
-              focus:ring-2
-              focus:ring-black/20
-            "
+            aria-label="Alamat Email"
+            className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
           />
 
           <textarea
             name="message"
+            value={form.message}
+            required
             rows="4"
             placeholder={t("contact.message")}
             onChange={handleChange}
-            className="
-              w-full
-              border
-              rounded-xl
-              p-3
-              focus:outline-none
-              focus:ring-2
-              focus:ring-black/20
-            "
+            aria-label="Pesan"
+            className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition resize-none"
           />
 
-          {/* SEND BUTTON */}
           <motion.button
+            type="submit"
             whileTap={{ scale: 0.95 }}
-            whileHover={{ scale: 1.03 }}
-            onClick={sendWhatsApp}
-            className="
-              w-full
-              flex items-center justify-center gap-2
-              bg-black text-white
-              py-3
-              rounded-xl
-              font-medium
-              shadow-soft
-            "
+            whileHover={{ scale: 1.02 }}
+            className="w-full flex items-center justify-center gap-2 border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 rounded-xl font-medium shadow-soft transition"
           >
-            <FaWhatsapp />
+            <FaWhatsapp size={20} />
             {t("contact.send")}
           </motion.button>
-        </motion.div>
+        </motion.form>
 
-        {/* SOCIAL LINKS */}
-        <div className="flex justify-center gap-6 mt-10 text-2xl text-gray-600">
+        <div className="flex justify-center gap-6 mt-10 text-2xl text-primary/60">
           <a
-            href="https://github.com/username"
+            href="https://github.com/jukisadikin"
             target="_blank"
-            className="hover:scale-110 transition"
+            rel="noopener noreferrer"
+            aria-label="Profil GitHub"
+            className="hover:text-black hover:scale-110 transition"
           >
             <FaGithub />
           </a>
 
           <a
-            href="https://linkedin.com/in/username"
+            href="https://linkedin.com/in/jukisadikin"
             target="_blank"
-            className="hover:scale-110 transition"
+            rel="noopener noreferrer"
+            aria-label="Profil LinkedIn"
+            className="hover:text-[#0a66c2] hover:scale-110 transition"
           >
             <FaLinkedin />
           </a>

@@ -8,27 +8,22 @@
     "hero": {
         "name": "Juki Sadikin",
         "role": "Frontend Developer",
-        "description": "Pengembang Web yang bersemangat dan ahli dalam React.JS dan Laravel, berdedikasi untuk menciptakan perangkat lunak inovatif dan berkinerja tinggi yang memberikan pengalaman pengguna yang lancar. Berkomitmen untuk memadukan kreativitas dengan keunggulan teknis untuk mengembangkan solusi perangkat lunak yang intuitif, efisien, dan berdampak.",
+        "description": "Menciptakan pengalaman web modern dengan antarmuka pengguna yang rapi, performa yang lancar, dan dampak nyata.",
         "ctaProject": "Lihat Proyek",
         "ctaContact": "Hubungi Saya"
     },
     "about": {
         "title": "Tentang Saya",
-        "description": "Saya adalah developer yang berfokus pada pengembangan web modern, performa tinggi, dan pengalaman pengguna yang bersih serta intuitif.",
-        "educationTitle": "Riwayat Pendidikan",
-        "skillsTitle": "Keahlian",
-        "education": [
-        {
-            "school": "Universitas Contoh",
-            "major": "Teknik Informatika",
-            "year": "2020 - 2024"
-        },
-        {
-            "school": "SMK Contoh",
-            "major": "Rekayasa Perangkat Lunak",
-            "year": "2017 - 2020"
-        }
-        ]
+        "description": "Saya adalah seorang pengembang frontend yang berfokus pada pembuatan aplikasi web yang skalabel dan berkinerja tinggi. Saya senang mengubah ide-ide rumit menjadi antarmuka yang rapi dan intuitif, dan saya memiliki pengalaman dalam mengembangkan aplikasi web serta permainan edukatif interaktif.",
+
+        "journeyTitle": "Perjalanan",
+        "work": "Pekerjaan",
+        "education": "Pendidikan",
+
+        "skillsTitle": "Keahlian & Tools",
+        "languages": "Bahasa",
+        "frameworks": "Framework",
+        "tools": "Tools"
     },
     "contact": {
         "title": "Hubungi Saya",

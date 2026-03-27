@@ -29,7 +29,7 @@ export default function Navbar() {
       className="
       fixed w-full z-50
       backdrop-blur-md
-      bg-white/60
+      bg-white/50
       border-b border-gray-200
     "
     >
@@ -103,7 +103,8 @@ export default function Navbar() {
             transition={{ duration: 0.25 }}
             className="
               md:hidden
-              bg-white
+              backdrop-blur-md
+              bg-white/60
               border-t
               border-gray-200
             "

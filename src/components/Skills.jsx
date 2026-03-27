@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Skills() {
 const { t } = useTranslation();
-const [skillTab, setSkillTab] = useState("languages");
+const [skillTab, setSkillTab] = useState("techStack");
 
 return (
 <div className="w-full">
@@ -14,11 +14,11 @@ return (
 </h3>
 
   <div className="flex flex-wrap bg-white rounded-xl p-1 shadow-sm w-full md:w-fit mb-8 gap-1">
-    {["languages", "frameworks", "tools"].map((tab) => (
+    {["techStack", "tools"].map((tab) => (
       <button
         key={tab}
         onClick={() => setSkillTab(tab)}
-        className={`flex-1 md:flex-none px-3 py-2 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 ${
+        className={`flex-1 md:flex-none px-3 py-2 rounded-lg text-xs md:text-sm font-medium cursor-pointer transition-all duration-300 ${
           skillTab === tab
             ? "bg-primary text-white shadow-md"
             : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
@@ -38,20 +38,17 @@ return (
       transition={{ duration: 0.3 }}
       className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4 w-full"
     >
-      {skillsData[skillTab].map((skill, index) => {
-        const Icon = skill.icon;
-        return (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center gap-2 bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md hover:border-primary/30 transition-all duration-300 group w-full"
-          >
-            <Icon className="text-3xl text-gray-400 group-hover:text-primary transition-colors duration-300 shrink-0" />
-            <span className="text-xs md:text-sm font-medium text-gray-700 text-center break-words">
-              {skill.name}
-            </span>
-          </div>
-        );
-      })}
+      {skillsData[skillTab].map((skill) => (
+        <div
+          key={skill.name}
+          className="flex flex-row items-center gap-3 bg-transparent rounded-xl p-4 border-2 border-gray-300 hover:border-primary transition-all duration-300 group w-full"
+        >
+          <div className="w-2 h-2 rounded-full bg-gray-800 group-hover:bg-primary shrink-0"></div>
+          <span className="text-xs md:text-sm font-medium text-gray-700 group-hover:text-primary wrap-break-word">
+            {skill.name}
+          </span>
+        </div>
+      ))}
     </motion.div>
   </AnimatePresence>
 </div>

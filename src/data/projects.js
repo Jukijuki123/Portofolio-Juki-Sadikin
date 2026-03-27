@@ -16,12 +16,12 @@ export const projects = [
     slug: "portfolio-website",
     featured: true,
     name: {
-      id: "Website Portfolio",
-      en: "Portfolio Website",
+      id: "EARTHLINE",
+      en: "EARTHLINE",
     },
     description: {
-      id: "Website portfolio modern dengan desain minimalis dan animasi interaktif",
-      en: "Modern portfolio website with clean design and interactive animations",
+      id: "Website edukasi pengelolaan sampah dengan desain menarik dan animasi interaktif",
+      en: "Waste management education website with attractive design and interactive animations",
     },
     category: "Web",
     tech: ["React", "Tailwind", "Framer Motion"],
@@ -44,8 +44,8 @@ export const projects = [
     category: "Web",
     tech: ["React", "Tailwind", "Laravel", "MySQL"],
     image: flowershop,
-    demo: "https://demo.com",
-    github: "https://github.com",
+    demo: "#",
+    github: "#",
   },
 
   {

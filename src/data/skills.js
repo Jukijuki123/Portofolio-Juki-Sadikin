@@ -1,28 +1,24 @@
-import {
-  SiJavascript,
-  SiPhp,
-  SiPython,
-  SiReact,
-  SiTailwindcss,
-  SiLaravel,
-  SiFigma,
-  SiGit,
-
-} from "react-icons/si";
-
 export const skillsData = {
-  languages: [
-    { name: "JavaScript", icon: SiJavascript },
-    { name: "PHP", icon: SiPhp },
-    { name: "Python", icon: SiPython },
+  techStack: [
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "TailwindCSS" },
+    { name: "JavaScript" },
+    { name: "React" },
+    { name: "Node.js" },
+    { name: "PHP" },
+    { name: "Laravel" },
+    { name: "Python" },
+    { name: "MySQL" },
+    { name: "MongoDB" },
   ],
-  frameworks: [
-    { name: "React", icon: SiReact },
-    { name: "Tailwind", icon: SiTailwindcss },
-    { name: "Laravel", icon: SiLaravel },
-  ],
-  tools: [
-    { name: "Figma", icon: SiFigma },
-    { name: "Git", icon: SiGit },
+
+    tools: [
+    { name: "VS Code" },
+    { name: "Postman" },
+    { name: "Git" },
+    { name: "Vercel" },
+    { name: "Figma" },
+    { name: "GDevelop 5" },
   ],
 };

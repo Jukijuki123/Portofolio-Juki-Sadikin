@@ -20,7 +20,7 @@ return (
     id="home"
     className="min-h-screen flex items-center pt-24"
   >
-    <div className="w-full md:max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row gap-12 items-center justify-between">
+    <div className="w-full md:max-w-6xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-12 items-center justify-between">
 
       <motion.div
         initial={{ opacity: 0, x: -40 }}
@@ -52,7 +52,7 @@ return (
             href="/CV_jukisadikin.pdf"
             download="CV_jukisadikin.pdf"
             aria-label="Unduh CV"
-            className="px-6 py-3 border border-primary rounded-xl hover:bg-teal-50 text-primary focus:ring-4 focus:ring-primary/30 outline-none transition inline-block text-center"
+            className="px-6 py-3 border border-primary rounded-xl hover:bg-teal-50 hover:scale-105  text-primary focus:ring-4 focus:ring-primary/30 outline-none transition inline-block text-center"
             >
             {t("hero.ctaResume")}
             </a>

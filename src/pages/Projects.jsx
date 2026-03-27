@@ -30,7 +30,7 @@ const filtered = projects.filter((p) => {
 
 return (
 <section id="projects" className="py-28 bg-soft">
-<div className="max-w-6xl mx-auto px-6">
+<div className="w-full md:max-w-6xl mx-auto px-6">
 <h2 className="text-4xl font-grotesk font-semibold text-primary mb-8 ">Projects</h2>
 
     <div className="flex flex-col md:flex-row justify-between gap-4 mb-10">

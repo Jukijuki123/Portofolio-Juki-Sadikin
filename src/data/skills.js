@@ -7,6 +7,7 @@ import {
   SiLaravel,
   SiFigma,
   SiGit,
+
 } from "react-icons/si";
 
 export const skillsData = {

@@ -8,6 +8,7 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 export default function Achievements() {
 const { t } = useTranslation();
 const [selected, setSelected] = useState(null);
+const [activeIndex, setActiveIndex] = useState(0);
 const sliderRef = useRef(null);
 
 const slide = (offset) => {

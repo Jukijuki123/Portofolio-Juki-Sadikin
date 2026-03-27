@@ -11,10 +11,10 @@ const lang = i18n.language.startsWith("id") ? "id" : "en";
 const data = activeTab === "work" ? workData : educationData;
 
 return (
-<div className="w-full">
-<h3 className="text-xl md:text-2xl font-space font-bold mb-6 text-primary">
-{t("about.journeyTitle")}
-</h3>
+<div className="w-full mb-4">
+  <h3 className="text-xl md:text-2xl font-space font-bold mb-6 text-primary">
+  {t("about.journeyTitle")}
+  </h3>
 
   <div className="flex flex-wrap bg-white rounded-xl p-1 shadow-sm w-full md:w-fit mb-8 gap-1">
     {["work", "education"].map((tab) => (

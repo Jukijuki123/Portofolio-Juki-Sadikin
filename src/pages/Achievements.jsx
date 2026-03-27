@@ -32,7 +32,7 @@ return (
 <div className="max-w-6xl mx-auto px-6">
 
     <div className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-12 gap-4">
-      <h2 className="text-3xl md:text-4xl font-semibold text-primary text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-grotesk font-semibold text-primary text-center md:text-left">
         {t("achievement.title")}
       </h2>
 

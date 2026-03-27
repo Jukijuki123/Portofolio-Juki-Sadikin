@@ -39,7 +39,7 @@ export default function Contact() {
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-4xl font-semibold mb-10 text-primary text-center"
+          className="text-4xl grotesk font-semibold mb-10 text-primary text-center"
         >
           {t("contact.title")}
         </motion.h2>

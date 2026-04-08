@@ -12,7 +12,7 @@ export default function App() {
     <>
 
       <main className="scroll-smooth">
-      <Navbar />
+        <Navbar />
         <Home />
         <About />
         <Projects />

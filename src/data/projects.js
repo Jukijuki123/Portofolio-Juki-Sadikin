@@ -1,5 +1,5 @@
-import earthline from "../assets/images/projects/earthline.png";
-import flowershop from "../assets/images/projects/flower-shop.png";
+import revoloop from "../assets/images/projects/revoloop.png";
+import flowershop from "../assets/images/projects/flowershop.png";
 
 import gdev127 from "../assets/images/projects/gdev-b.indo127.png";
 import gdev162 from "../assets/images/projects/gdev-pp162.png";
@@ -16,8 +16,8 @@ export const projects = [
     slug: "portfolio-website",
     featured: true,
     name: {
-      id: "EARTHLINE",
-      en: "EARTHLINE",
+      id: "REVOLOOP",
+      en: "REVOLOOP",
     },
     description: {
       id: "Website edukasi pengelolaan sampah dengan desain menarik dan animasi interaktif",
@@ -25,8 +25,8 @@ export const projects = [
     },
     category: "Web",
     tech: ["React", "Tailwind", "Framer Motion"],
-    image: earthline,
-    demo: "#",
+    image: revoloop,
+    demo: "https://www.revoloop.web.id/",
     github: "#",
   },
   {
@@ -113,7 +113,7 @@ export const projects = [
     tech: ["GDevelop 5", "Figma"],
     image: gdev244,
     demo: "https://gd.games/juki25/matematika-kelas-5-bab-7",
-    github: "https://github.com",
+    github: "#",
   },
   {
     id: 7,
@@ -129,7 +129,7 @@ export const projects = [
     tech: ["GDevelop 5", "Figma"],
     image: gdev54,
     demo: "https://gd.games/juki25/game-matematika",
-    github: "https://github.com",
+    github: "#",
   },
   {
     id: 8,
@@ -145,7 +145,7 @@ export const projects = [
     tech: ["GDevelop 5", "Figma"],
     image: gdev276,
     demo: "https://gd.games/juki25/ipas-kls-5-bab-3",
-    github: "https://github.com",
+    github: "#",
   },
   {
     id: 10,
@@ -161,7 +161,7 @@ export const projects = [
     tech: ["GDevelop 5", "Figma"],
     image: gdev94,
     demo: "https://gd.games/juki25/berkenalan-dengan-energi",
-    github: "https://github.com",
+    github: "#",
   },
   {
     id: 11,
@@ -177,6 +177,6 @@ export const projects = [
     tech: ["GDevelop 5", "Figma"],
     image: gdev199,
     demo: "https://gd.games/juki25/b-indonesia-kelas-4-bab-1",
-    github: "https://github.com",
+    github: "#",
   },
 ];

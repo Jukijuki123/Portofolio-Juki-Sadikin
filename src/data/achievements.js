@@ -5,7 +5,7 @@ import cert3 from "../assets/images/certificate/BDA2026.png";
 import cert4 from "../assets/images/certificate/AIIC2025.png";
 import cert5 from "../assets/images/certificate/Technoversary2025.png";
 import cert6 from "../assets/images/certificate/INVOFEST2025.png";
-import cert7 from "../assets/images/certificate/invention25.png";
+import cert7 from "../assets/images/certificate/Invention25.png";
 
 import cert8 from "../assets/images/certificate/BDDD2024.png";
 import cert9 from "../assets/images/certificate/CPE2024.png";

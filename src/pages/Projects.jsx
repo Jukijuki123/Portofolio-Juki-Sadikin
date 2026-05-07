@@ -29,7 +29,7 @@ const filtered = projects.filter((p) => {
 });
 
 return (
-<section id="projects" className="py-28 bg-soft">
+<section id="projects" className="py-16 md:py-24">
 <div className="w-full md:max-w-6xl mx-auto px-6">
 <h2 className="text-4xl font-grotesk font-semibold text-primary mb-8 ">Projects</h2>
 

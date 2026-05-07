@@ -1,5 +1,7 @@
 import revoloop from "../assets/images/projects/revoloop.png";
 import flowershop from "../assets/images/projects/flowershop.png";
+import freelancelink from "../assets/images/projects/freelancelink.png";
+import mitramuda from "../assets/images/projects/mitramuda2025.png";
 
 import gdev127 from "../assets/images/projects/gdev-b.indo127.png";
 import gdev162 from "../assets/images/projects/gdev-pp162.png";
@@ -14,7 +16,6 @@ export const projects = [
   {
     id: 1,
     slug: "portfolio-website",
-    featured: true,
     name: {
       id: "REVOLOOP",
       en: "REVOLOOP",
@@ -32,7 +33,6 @@ export const projects = [
   {
     id: 2,
     slug: "flower-shop",
-    featured: true,
     name: {
       id: "Website Toko Bunga",
       en: "Flower Shop Website",
@@ -47,9 +47,43 @@ export const projects = [
     demo: "#",
     github: "#",
   },
-
   {
     id: 3,
+    slug: "freelancelink",
+    name: {
+      id: "FreelanceLink",
+      en: "FreelanceLink",
+    },
+    description: {
+      id: "Portal freelancer untuk mencari dan menawarkan jasa profesional dengan sistem ulasan dan penilaian",
+      en: "Freelancer portal to find and offer professional services with review and rating system",
+    },
+    category: "Web",
+    tech: ["Next JS", "Tailwind", "PostgreSQL"],
+    image: freelancelink,
+    demo: "https://www.freelancelink.web.id/",
+    github: "#",
+  },
+  {
+    id: 4,
+    slug: "mitra-muda",
+    name: {
+      id: "Mitra Muda",
+      en: "Mitra Muda",
+    },
+    description: {
+      id: "Platform digitalisasi dan kolaborasi UMKM",
+      en: "Digitalization and collaboration platform for MSMEs",
+    },
+    category: "Web",
+    tech: ["React JS", "Tailwind", "Laravel"],
+    image: mitramuda,
+    demo: "#",
+    github: "#",
+  },
+
+  {
+    id: 101,
     slug: "game-bindo-1-bab-1",
     name: {
       id: "Game Bahasa Indonesia Kelas 1",
@@ -66,7 +100,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 4,
+    id: 102,
     slug: "game-pancasila-1-bab-4",
     name: {
       id: "Game Pendidikan Pancasila",
@@ -83,7 +117,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 5,
+    id: 103,
     slug: "game-math-6-bab-4",
     name: {
       id: "Game Matematika Kelas 6",
@@ -100,7 +134,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 6,
+    id: 104,
     name: {
       id: "Game Matematika Kelas 5",
       en: "Math Game Grade 5",
@@ -116,7 +150,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 7,
+    id: 105,
     name: {
       id: "Game Matematika Kelas 3",
       en: "Math Game Grade 3",
@@ -132,7 +166,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 8,
+    id: 106,
     name: {
       id: "Game IPAS Kelas 5",
       en: "Soscial Science Game Grade 5",
@@ -148,7 +182,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 10,
+    id: 107,
     name: {
       id: "Game IPAS Kelas 3",
       en: " Science Game Grade 3",
@@ -164,7 +198,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 11,
+    id: 108,
     name: {
       id: "Game Bahasa Indonesia Kelas 4",
       en: "Indonesian Language Game Grade 1",

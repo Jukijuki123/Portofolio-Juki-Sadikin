@@ -12,7 +12,7 @@ export default function Contact() {
     message: "",
   });
 
-  const phoneNumber = "6285707393495"; 
+  const phoneNumber = "6285707393495";
 
   const handleChange = (e) => {
     setForm({
@@ -28,12 +28,12 @@ export default function Contact() {
     const url = `https://wa.me/${phoneNumber}?text=` + encodeURIComponent(text);
 
     window.open(url, "_blank");
-    
+
     setForm({ name: "", email: "", message: "" });
   };
 
   return (
-    <section id="contact" className="py-28 bg-soft">
+    <section id="contact" className="py-16 md:py-24">
       <div className="max-w-xl mx-auto px-6">
 
         <motion.h2
@@ -96,7 +96,7 @@ export default function Contact() {
 
         <div className="flex justify-center gap-6 mt-10 text-2xl text-primary/60">
           <a
-            href="https://github.com/jukisadikin"
+            href="https://github.com/jukijuki123"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Profil GitHub"
@@ -106,7 +106,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/in/jukisadikin"
+            href="https://linkedin.com/in/juki-sadikin-54b415345"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Profil LinkedIn"

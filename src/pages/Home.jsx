@@ -18,7 +18,7 @@ const scrollTo = (id) => {
 return (
   <section
     id="home"
-    className="min-h-screen flex items-center pt-24"
+    className="min-h-screen flex items-center pt-24 md:pt-32 pb-16"
   >
     <div className="w-full md:max-w-6xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-12 items-center justify-between">
 
@@ -59,12 +59,7 @@ return (
         </div>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.7 }}
-        className="flex justify-center"
-      >
+      <div className="flex justify-center">
         <div className="relative group aspect-square w-72 md:w-96">
 
           <img
@@ -81,9 +76,8 @@ return (
             className="w-full h-full rounded-3xl object-cover absolute top-0 left-0 opacity-0 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
           />
 
-
         </div>
-      </motion.div>
+      </div>
 
     </div>
   </section>

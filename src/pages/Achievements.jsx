@@ -29,7 +29,7 @@ const handleScroll = () => {
 };
 
 return (
-<section id="achievements" className="py-20 md:py-28 overflow-hidden">
+<section id="achievements" className="py-16 md:py-24 overflow-hidden">
 <div className="max-w-6xl mx-auto px-6">
 
     <div className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-12 gap-4">

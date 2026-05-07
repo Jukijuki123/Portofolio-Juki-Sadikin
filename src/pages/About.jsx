@@ -6,7 +6,7 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-28 bg-soft">
+    <section id="about" className="py-16 md:py-24">
       <div className="w-full md:max-w-6xl mx-auto px-6">
 
         {/* TITLE */}

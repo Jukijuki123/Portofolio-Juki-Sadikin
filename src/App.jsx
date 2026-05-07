@@ -7,6 +7,8 @@ import Projects from "./pages/Projects";
 
 
 
+import Footer from "./components/Footer";
+
 export default function App() {
   return (
     <>
@@ -18,6 +20,7 @@ export default function App() {
         <Projects />
         <Achievements />
         <Contact />
+        <Footer />
       </main>
     </>
   );

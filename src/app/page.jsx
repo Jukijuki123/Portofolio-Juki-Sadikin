@@ -21,10 +21,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="fixed inset-0 z-[-1] overflow-hidden bg-soft pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/10 blur-[100px]"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-secondary/20 blur-[100px]"></div>
-      </div>
+      <div className="fixed inset-0 z-[-1] bg-soft pointer-events-none"></div>
 
       <main className="scroll-smooth flex flex-col">
         <Navbar />

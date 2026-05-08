@@ -29,7 +29,7 @@ export default function Navbar() {
       className="
       fixed w-full z-50
       backdrop-blur-md
-      bg-white/50
+      bg-soft
       border-b border-gray-200
     "
     >

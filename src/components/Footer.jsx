@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="py-8 bg-white border-t border-gray-100">
+    <footer className="py-8 bg-white border-t border-gray-200">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-gray-500 text-sm font-medium">
           &copy; {new Date().getFullYear()} Juki Sadikin. All rights reserved.

@@ -1,9 +1,87 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 export default function Hero() {
   const { t } = useTranslation();
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesConfig = {
+    fullScreen: { enable: false },
+
+    particles: {
+      color: { value: "#30b3a1" },
+
+      links: {
+        color: "#30b3a1",
+        distance: 150,
+        enable: true,
+        opacity: 1,
+        width: 1,
+      },
+
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        random: false,
+        straight: false,
+        outModes: {
+          default: "bounce",
+        },
+      },
+
+      number: {
+        density: {
+          enable: true,
+          area: 800,
+        },
+        value: 100,
+      },
+
+      opacity: {
+        value: 0.3,
+      },
+
+      shape: {
+        type: "circle",
+      },
+
+      size: {
+        value: { min: 2, max: 4 },
+      },
+    },
+
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "repulse",
+        },
+        resize: true,
+      },
+
+      modes: {
+        repulse: {
+          distance: 120,
+          duration: 0.4,
+        },
+      },
+    },
+
+    detectRetina: true,
+  };
 
   const scrollTo = (id) => {
     const element = document.getElementById(id);
@@ -17,9 +95,16 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-24 md:pt-32 pb-16"
+      className="min-h-screen flex items-center pt-24 md:pt-32 pb-16 relative"
     >
-      <div className="w-full md:max-w-6xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-12 items-center justify-between">
+      {init && (
+        <Particles
+          id="tsparticles"
+          options={particlesConfig}
+          className="absolute inset-0 z-0"
+        />
+      )}
+      <div className="w-full md:max-w-6xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-12 items-center justify-between relative z-10">
 
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -62,7 +147,7 @@ export default function Hero() {
           <div className="relative group aspect-square w-72 md:w-96">
 
             <Image
-              src="/assets/profil1.svg"
+              src="/assets/profil1.png"
               alt="Foto Profil"
               priority
               fetchPriority="high"
@@ -73,13 +158,13 @@ export default function Hero() {
             />
 
             <Image
-              src="/assets/profil2.svg"
+              src="/assets/profil2.png"
               alt=""
               aria-hidden="true"
               width={384}
               height={384}
               loading="lazy"
-              className="w-full h-full rounded-3xl object-cover absolute top-0 left-0 opacity-0 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+              className="w-full h-full rounded-3xl object-cover absolute top-0 left-0 opacity-0 transition duration-500 group-hover:scale-[102%] group-hover:opacity-100"
             />
 
           </div>

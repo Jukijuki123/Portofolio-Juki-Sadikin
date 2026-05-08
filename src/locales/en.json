@@ -14,17 +14,16 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I am a frontend developer focused on building scalable and high-performance web applications. I enjoy transforming complex ideas into clean and intuitive interfaces, and I have experience developing both web applications and interactive educational games.",
+    "description": "I am a Full Stack Developer focused on building scalable, high-performance web applications. I enjoy transforming complex ideas into clean and intuitive digital solutions, from user interfaces to the systems behind them. I also have experience developing web applications and interactive educational games.",
     "journeyTitle": "Journey",
     "work": "Work",
     "education": "Education",
-
     "skillsTitle": "Skills & Tools",
     "techStack": "Tech Stack",
     "tools": "Tools"
   },
   "contact": {
-    "title": "Contact Me",   
+    "title": "Contact Me",
     "name": "Name",
     "email": "Email",
     "message": "Message",

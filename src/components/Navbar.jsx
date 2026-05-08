@@ -35,8 +35,8 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
 
-        <motion.a 
-          href="#home" 
+        <motion.a
+          href="#home"
           className="relative group block"
           // Animasi Framer Motion untuk 'Heining Pulse'
           animate={{
@@ -57,7 +57,7 @@ export default function Navbar() {
           <span className="text-2xl md:text-3xl font-bold text-primary font-mono tracking-tighter">
             &lt;JS /&gt;
           </span>
-          
+
           {/* Efek Hover Garis Bawah (Opsional, Tambahan UX) */}
           <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
         </motion.a>

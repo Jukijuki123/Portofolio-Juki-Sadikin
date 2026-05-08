@@ -1,16 +1,16 @@
-import revoloop from "../assets/images/projects/revoloop.png";
-import flowershop from "../assets/images/projects/flowershop.png";
-import freelancelink from "../assets/images/projects/freelancelink.png";
-import mitramuda from "../assets/images/projects/mitramuda2025.png";
+const revoloop = "/assets/projects/revoloop.png";
+const flowershop = "/assets/projects/flowershop.png";
+const freelancelink = "/assets/projects/freelancelink.png";
+const mitramuda = "/assets/projects/mitramuda2025.png";
 
-import gdev127 from "../assets/images/projects/gdev-b.indo127.png";
-import gdev162 from "../assets/images/projects/gdev-pp162.png";
-import gdev293 from "../assets/images/projects/gdev-mtk293.png";
-import gdev244 from "../assets/images/projects/gdev-mtk244.png";
-import gdev54 from "../assets/images/projects/gdev-mtk54.png";
-import gdev276 from "../assets/images/projects/gdev-ipas276.png";
-import gdev94 from "../assets/images/projects/gdev-ipas94.png";
-import gdev199 from "../assets/images/projects/gdev-bindo199.png";
+const gdev127 = "/assets/projects/gdev-b.indo127.png";
+const gdev162 = "/assets/projects/gdev-pp162.png";
+const gdev293 = "/assets/projects/gdev-mtk293.png";
+const gdev244 = "/assets/projects/gdev-mtk244.png";
+const gdev54 = "/assets/projects/gdev-mtk54.png";
+const gdev276 = "/assets/projects/gdev-ipas276.png";
+const gdev94 = "/assets/projects/gdev-ipas94.png";
+const gdev199 = "/assets/projects/gdev-bindo199.png";
 
 export const projects = [
   {

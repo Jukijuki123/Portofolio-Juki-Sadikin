@@ -14,12 +14,10 @@
     },
     "about": {
         "title": "Tentang Saya",
-        "description": "Saya adalah seorang pengembang frontend yang berfokus pada pembuatan aplikasi web yang skalabel dan berkinerja tinggi. Saya senang mengubah ide-ide rumit menjadi antarmuka yang rapi dan intuitif, dan saya memiliki pengalaman dalam mengembangkan aplikasi web serta permainan edukatif interaktif.",
-
+        "description": "Saya adalah seorang Full Stack Developer yang berfokus pada pengembangan aplikasi web yang skalabel, responsif, dan berkinerja tinggi. Saya senang mengubah ide-ide kompleks menjadi solusi digital yang rapi dan intuitif, baik dari sisi antarmuka maupun sistem di baliknya. Saya memiliki pengalaman dalam membangun aplikasi web serta permainan edukatif interaktif.",
         "journeyTitle": "Perjalanan",
         "work": "Pekerjaan",
         "education": "Pendidikan",
-
         "skillsTitle": "Keahlian & Tools",
         "techStack": "Teknologi",
         "tools": "Tools"
@@ -34,5 +32,4 @@
     "achievement": {
         "title": "Pencapaian & Sertifikat"
     }
-
 }
